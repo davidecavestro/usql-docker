@@ -1,2 +1,3 @@
 # usql-docker
-Build a docker image from usql master branch
+
+Docker image with contents from [usql](https://github.com/xo/usql) main branch.
