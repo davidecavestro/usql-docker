@@ -78,6 +78,8 @@ jobs:
           tags: |
             # set latest tag for default branch
             type=raw,value=latest,enable={{is_default_branch}}
+            # use tag as label
+            type=ref,event=tag
             # avoid tagging as nightly
             type=schedule,enable=false
 
