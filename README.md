@@ -1,8 +1,8 @@
 # usql-docker
 
-Docker image with contents from [usql](https://github.com/xo/usql) main branch.
+Unofficial docker image for [usql](https://github.com/xo/usql).
 
-Get it with from GitHub container registry as
+Get it from GitHub container registry as
 
 `docker pull ghcr.io/davidecavestro/usql-docker:latest`
 
