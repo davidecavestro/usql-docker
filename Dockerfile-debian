@@ -1,0 +1,15 @@
+ARG REL=stable
+FROM curlimages/curl AS downloader
+ARG TAG
+ARG TARGETARCH
+
+RUN export VERSION=$(echo ${TAG} | sed 's/^v//') \
+  && mkdir -p /tmp/share \
+  && curl --fail -sSL https://github.com/xo/usql/releases/download/${TAG}/usql_static-${VERSION}-linux-${TARGETARCH}.tar.bz2 \
+    | tar -xjf - -C /tmp/share
+
+FROM debian:${REL}-slim
+
+COPY --from=downloader /tmp/share/usql_static /usr/local/bin/usql
+ENTRYPOINT ["/usr/local/bin/usql"]
+CMD ["--help"]
