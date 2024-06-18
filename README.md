@@ -4,7 +4,7 @@ Unofficial multiarch docker image for [usql](https://github.com/xo/usql), the un
 
 Get it from GitHub container registry as
 
-`docker pull ghcr.io/davidecavestro/usql-docker:latest`
+`docker pull ghcr.io/davidecavestro/usql:latest`
 
 or from dockerhub as
 
