@@ -1,4 +1,6 @@
 # usql-docker
+> [!IMPORTANT]
+> Please consider using the official <i>usql</i> image recently published at https://hub.docker.com/r/usql/usql
 
 Unofficial multiarch docker image for [usql](https://github.com/xo/usql), the universal command-line interface for SQL databases.
 
